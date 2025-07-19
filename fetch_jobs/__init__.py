@@ -8,7 +8,7 @@ from datetime import datetime
 
 def main(mytimer: func.TimerRequest) -> None:
     if mytimer.past_due:
-        logging.info('The timer is past due!')
+        logging.info('The timer is past due !')
 
     logging.info("Job fetch function started.")
 
@@ -144,4 +144,3 @@ def parse_date(utc_string):
         return datetime.fromisoformat(utc_string.replace("Z", "+00:00"))
     except Exception:
         return None
-    
